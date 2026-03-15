@@ -1,0 +1,16 @@
+package SESSION06.BT1.BT3;
+
+public class Main {
+    public static void main(String[] args) {
+        TicketPool roomA = new TicketPool("A", 3);
+        TicketPool roomB = new TicketPool("B", 3);
+        BookingCounter counter1 =
+                new BookingCounter("Quầy 1", roomA, roomB, false);
+        BookingCounter counter2 =
+                new BookingCounter("Quầy 2", roomA, roomB, true);
+        Thread t1 = new Thread(counter1);
+        Thread t2 = new Thread(counter2);
+        t1.start();
+        t2.start();
+    }
+}
