@@ -1,4 +1,4 @@
-package SESSION06.BT1.BT2;
+package SESSION06.BT2;
 
 import java.util.Random;
 

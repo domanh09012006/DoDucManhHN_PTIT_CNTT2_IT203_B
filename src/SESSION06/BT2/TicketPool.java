@@ -1,4 +1,4 @@
-package SESSION06.BT1.BT3;
+package SESSION06.BT2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class TicketPool {
             tickets.add(new Ticket(id, roomName));
         }
     }
-    public Ticket getTicket() {
+    public synchronized Ticket sellTicket() {
         for (Ticket t : tickets) {
             if (!t.isSold) {
                 t.isSold = true;
@@ -21,5 +21,14 @@ public class TicketPool {
             }
         }
         return null;
+    }
+    public int remainingTickets() {
+        int count = 0;
+        for (Ticket t : tickets) {
+            if (!t.isSold) {
+                count++;
+            }
+        }
+        return count;
     }
 }

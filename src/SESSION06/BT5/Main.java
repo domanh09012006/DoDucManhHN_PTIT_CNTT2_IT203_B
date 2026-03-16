@@ -1,4 +1,4 @@
-package SESSION06.BT1.BT5;
+package SESSION06.BT5;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package SESSION06.BT1.BT4;
+package SESSION06.BT4;
 
 public class BookingCounter implements Runnable {
     String counterName;

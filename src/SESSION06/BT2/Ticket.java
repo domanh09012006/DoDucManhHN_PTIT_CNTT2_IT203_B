@@ -1,4 +1,4 @@
-package SESSION06.BT1.BT3;
+package SESSION06.BT2;
 
 public class Ticket {
     String ticketId;
